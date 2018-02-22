@@ -1,0 +1,8 @@
+<div class="home">
+    {% mount '../form' with {
+        addPoint: addPoint
+    } %}
+    {% include '../point-list/index.twig' with {
+        points: points
+    } %}
+</div>
