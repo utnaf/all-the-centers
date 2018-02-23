@@ -5,4 +5,7 @@
     {% include '../point-list/List.twig' with {
         points: points
     } %}
+    {% mount '../canvas' with {
+        points: points
+    } %}
 </div>

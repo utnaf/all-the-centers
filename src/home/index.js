@@ -1,4 +1,4 @@
-import { createComponent, RECEIVE_PROPS } from "melody-component";
+import { createComponent } from "melody-component";
 import { dispatchToState } from "melody-util";
 import reduceReducers from "reduce-reducers";
 import Point from "../point-list/Point.js";
