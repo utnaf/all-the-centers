@@ -5,7 +5,10 @@ import template from "./index.twig";
 const enhance = bindEvents({
   addPointForm: {
     submit(event, component) {
-      component.props.addPoint(component.el[0].value || "no name");
+      component.props.addPoint(component.el[0].value, component.el[1].value);
+
+      component.el[0].value = "";
+      component.el[1].value = "";
 
       event.preventDefault();
       event.stopPropagation();
