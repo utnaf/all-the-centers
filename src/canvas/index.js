@@ -1,19 +1,15 @@
 import { lifecycle } from "melody-hoc";
 import { createComponent, RECEIVE_PROPS } from "melody-component";
 import template from "./index.twig";
+import Canvas from "./Canvas";
 
 const defaultState = { points: [] };
-let ctx = null;
+let canvas = null;
 
 const stateReducer = (state = defaultState, action) => {
   switch (action.type) {
     case RECEIVE_PROPS:
-      for(let pointName in action.payload.points) {
-        let point = action.payload.points[pointName];
-        ctx.beginPath();
-        ctx.arc(point.x, point.y, 4, 0, 2 * Math.PI, true);
-        ctx.fill();
-      }
+      canvas && canvas.drawPoints(action.payload.points);
       return {
         ...state,
         ...action.payload
@@ -25,9 +21,7 @@ const stateReducer = (state = defaultState, action) => {
 
 const enhance = lifecycle({
   componentDidMount() {
-    const canvas = document.getElementById("canvas");
-    ctx = canvas.getContext('2d');
-    ctx.fillStyle = 'rgba(0,0,0,0.5)';
+    canvas = new Canvas('canvas');
   }
 });
 
