@@ -18,6 +18,7 @@
     "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
+    "circumcenter-calculator": "^0.1.0",
     "melody-component": "^1.0.0",
     "melody-hoc": "^1.0.0",
     "melody-idom": "^1.0.0",

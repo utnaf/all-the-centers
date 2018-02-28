@@ -1,8 +1,8 @@
 import { createComponent } from "melody-component";
 import { dispatchToState } from "melody-util";
 import reduceReducers from "reduce-reducers";
-import Point from "../point-list/Point.js";
-import {concat, findIndex} from "lodash";
+import { Point } from "circumcenter-calculator";
+import { concat, findIndex } from "lodash";
 
 import template from "./index.twig";
 
@@ -15,7 +15,11 @@ const stateReducer = (state = defaultState, action) => {
     case ADD_POINT:
       const point = action.payload;
 
-      if(findIndex(state.points, (o) => { return o.toString() === point.toString(); }) === -1) {
+      if (
+        findIndex(state.points, o => {
+          return o.toString() === point.toString();
+        }) === -1
+      ) {
         return {
           ...state,
           points: concat(state.points, point)
