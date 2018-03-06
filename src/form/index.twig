@@ -1,5 +1,18 @@
 <form ref="{{ addPointForm }}">
-    <input type="text" id="point_x" name="point_x" placeholder="Insert x value" />
-    <input type="text" id="point_y" name="point_y" placeholder="Insert y value" />
-    <button type="submit">Submit</button>
+    <input type="text" 
+        id="point_x" 
+        name="point_x" 
+        placeholder="x" 
+        pattern="\-?[0-9]+" 
+        title="You need to insert an integer number"
+        required autofocus  />
+    <input 
+        type="text" 
+        id="point_y" 
+        name="point_y" 
+        placeholder="y" 
+        pattern="\-?[0-9]+" 
+        title="You need to insert an integer number"
+        required />
+    <button type="submit">Add</button>
 </form>

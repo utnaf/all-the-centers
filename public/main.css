@@ -1,3 +1,42 @@
 canvas {
   background: #333;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.form {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: auto;
+  padding: 10px;
+  z-index: 10;
+  background: rgba(180, 180, 180, 0.8);
+  border-radius: 5px;
+}
+.form input {
+  width: 42px;
+  margin-right: 5px;
+  padding: 2px 4px;
+  border: 1px solid #666
+}
+
+ol {
+  list-style: upper-latin;
+  margin: 10px 0 0 0;
+  padding: 0 0 0 22px;
+}
+
+.canvas_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

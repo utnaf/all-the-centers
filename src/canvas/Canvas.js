@@ -8,6 +8,8 @@ export default class Canvas {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
     this.context = null;
+    this.points = [];
+    this.midPoints = [];
 
     if (!this.canvas) {
       throw `Element with id ${id} doesn't exists`;
@@ -20,6 +22,13 @@ export default class Canvas {
   }
 
   drawPoint(point) {
+    this.points.push(point);
     this.gridDrawer.drawPoint(point);
+
+    if (this.points.length === 3) {
+      const midPoint = calculate(...this.points);
+      this.gridDrawer.drawMidPoint(midPoint);
+      this.points = [];
+    }
   }
 }

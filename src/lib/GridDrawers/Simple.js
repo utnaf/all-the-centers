@@ -5,8 +5,8 @@ export default class {
     this.boxHeight = document.getElementById("canvas").offsetHeight;
     this.context = this.canvas.getContext("2d");
 
-    this.midX = parseInt(Math.round(this.boxWidth/2))-1;
-    this.midY = parseInt(Math.round(this.boxHeight/2))-1;
+    this.midX = parseInt(Math.round(this.boxWidth / 2)) - 1;
+    this.midY = parseInt(Math.round(this.boxHeight / 2)) - 1;
   }
 
   draw() {
@@ -18,9 +18,26 @@ export default class {
   }
 
   drawPoint(point) {
-    this.context.fillStyle = 'red';
+    this.context.fillStyle = "green";
+    this.simpleDrawPoint(point);
+  }
+
+  drawMidPoint(point) {
+    this.context.fillStyle = "red";
+    this.simpleDrawPoint(point);
+  }
+
+  simpleDrawPoint(point) {
+    const scale = 10;
     this.context.beginPath();
-    this.context.arc(point.x + this.midX, point.y + this.midY, 4, 0, 2 * Math.PI, true);
+    this.context.arc(
+      (point.x * scale + this.midX),
+      (this.midY - point.y * scale),
+      6,
+      0,
+      2 * Math.PI,
+      true
+    );
     this.context.fill();
   }
 

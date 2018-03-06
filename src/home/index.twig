@@ -1,11 +1,15 @@
 <div class="home">
-    {% mount '../form' with {
-        addPoint: addPoint
-    } %}
-    {% include '../point-list/List.twig' with {
-        points: points
-    } %}
-    {% mount '../canvas' with {
-        points: points
-    } %}
+    <div class="form">
+        {% mount '../form' with {
+            addPoint: addPoint
+        } %}
+        {% include '../point-list/List.twig' with {
+            points: points
+        } %}
+    </div>
+    <div class="canvas_container">
+        {% mount '../canvas' with {
+            points: points
+        } %}
+    </div>
 </div>
