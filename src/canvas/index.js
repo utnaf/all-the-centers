@@ -9,7 +9,7 @@ let canvas = null;
 const stateReducer = (state = defaultState, action) => {
   switch (action.type) {
     case RECEIVE_PROPS:
-      canvas && canvas.drawPoints(action.payload.points);
+      canvas && canvas.drawPoint(action.payload.points[action.payload.points.length - 1]);
       return {
         ...state,
         ...action.payload
@@ -22,6 +22,7 @@ const stateReducer = (state = defaultState, action) => {
 const enhance = lifecycle({
   componentDidMount() {
     canvas = new Canvas('canvas');
+    canvas.drawGrid();
   }
 });
 
