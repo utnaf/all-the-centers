@@ -6,11 +6,12 @@
   "repository": "https://bitbucket.org/utnaf/all-the-centers",
   "author": "Davide Effe <utnaf.dev@gmail.com>",
   "license": "MIT",
+  "homepage": "https://all-the-centers.herokuapp.com/",
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "webpack --progress --colors --display-chunks",
-    "deploy": "yarn build && git push heroku master"
+    "watch": "webpack-dev-server",
+    "build": "webpack --progress --colors --display-chunks"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
