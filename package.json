@@ -1,11 +1,12 @@
 {
-  "name": "melody-template",
+  "name": "all-the-centers",
   "version": "0.1.0",
-  "description": "Melody starter template",
+  "description": "Estimate middle points given some coordinates.",
   "main": "src/index.js",
-  "repository": "https://github.com/trivago/melody-template",
-  "author": "trivago",
-  "license": "Apache-2.0",
+  "repository": "https://bitbucket.org/utnaf/all-the-centers",
+  "author": "Davide Effe <utnaf.dev@gmail.com>",
+  "license": "MIT",
+  "private": true,
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack --progress --colors --display-chunks"
