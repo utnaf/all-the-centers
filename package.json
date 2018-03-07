@@ -2,7 +2,7 @@
   "name": "all-the-centers",
   "version": "0.1.0",
   "description": "Estimate middle points given some coordinates.",
-  "main": "src/index.js",
+  "main": "server.js",
   "repository": "https://bitbucket.org/utnaf/all-the-centers",
   "author": "Davide Effe <utnaf.dev@gmail.com>",
   "license": "MIT",
