@@ -29,15 +29,15 @@ export default class {
 
   simpleDrawPoint(point) {
     const scale = 10;
+    const actualX = this.midX + point.x * scale;
+    const actualY = this.midY - point.y * scale;
+
+    if (actualX > this.boxWidth || actualY > this.boxHeight) {
+      throw `Point ${point.toString()} out of border`;
+    }
+
     this.context.beginPath();
-    this.context.arc(
-      (point.x * scale + this.midX),
-      (this.midY - point.y * scale),
-      6,
-      0,
-      2 * Math.PI,
-      true
-    );
+    this.context.arc(actualX, actualY, 6, 0, 2 * Math.PI, true);
     this.context.fill();
   }
 

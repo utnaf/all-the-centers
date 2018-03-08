@@ -3,6 +3,7 @@ import { dispatchToState } from "melody-util";
 import reduceReducers from "reduce-reducers";
 import { Point } from "circumcenter-calculator";
 import { concat, findIndex } from "lodash";
+import { Canvas } from "../canvas/Canvas";
 
 import template from "./index.twig";
 

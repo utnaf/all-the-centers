@@ -31,4 +31,8 @@ export default class Canvas {
       this.points = [];
     }
   }
+
+  validate(point) {
+    
+  }
 }

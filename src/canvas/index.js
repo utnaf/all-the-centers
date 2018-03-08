@@ -9,7 +9,12 @@ let canvas = null;
 const stateReducer = (state = defaultState, action) => {
   switch (action.type) {
     case RECEIVE_PROPS:
-      canvas && canvas.drawPoint(action.payload.points[action.payload.points.length - 1]);
+      try {
+        canvas && canvas.drawPoint(action.payload.points[action.payload.points.length - 1]);
+      } catch(e) {
+        return state;
+      }
+      
       return {
         ...state,
         ...action.payload
