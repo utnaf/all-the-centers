@@ -1,5 +1,5 @@
 import { render } from "melody-component";
-import home from "./home";
+import planComponent from "./plan";
 
 const documentRoot = document.getElementById("root");
-render(documentRoot, home);
+render(documentRoot, planComponent);
