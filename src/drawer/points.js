@@ -23,11 +23,8 @@ function drawPointFromContext(ctx, point, diameter = 3) {
 }
 
 function drawCircumcenters(points, opacity = 9) {
-  const ctx = getContext(CIRCUMCENTER_CONTEXT);
-  ctx.fillStyle = `rgba(255,0,0,0.5)`;
-
   const centers = combinations(points).map(points => {
-    return drawPointFromContext(ctx, calculate(...points));
+    return calculate(...points);
   });
 
   return centers.length > 2 ? drawCircumcenters(centers, ++opacity) : [];

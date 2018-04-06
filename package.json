@@ -1,6 +1,6 @@
 {
   "name": "all-the-centers",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Estimate middle points given some coordinates.",
   "main": "server.js",
   "repository": "https://bitbucket.org/utnaf/all-the-centers",
