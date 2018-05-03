@@ -32,6 +32,7 @@
     "melody-traverse": "^1.0.4",
     "melody-types": "^1.0.4",
     "melody-util": "^1.0.4",
+    "ml-combinations": "^1.0.1",
     "reduce-reducers": "^0.1.2"
   }
 }
