@@ -205,17 +205,6 @@ babel-core@^6.26.0:
     slash "^1.0.0"
     source-map "^0.5.7"
 
-babel-generator@6.10.x:
-  version "6.10.2"
-  resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.10.2.tgz#af831816643dbeb87bc0765be02f1f57bc14053f"
-  dependencies:
-    babel-messages "^6.8.0"
-    babel-runtime "^6.9.0"
-    babel-types "^6.10.2"
-    detect-indent "^3.0.1"
-    lodash "^4.2.0"
-    source-map "^0.5.0"
-
 babel-generator@^6.26.0:
   version "6.26.1"
   resolved "https://registry.yarnpkg.com/babel-generator/-/babel-generator-6.26.1.tgz#1844408d3b8f0d35a404ea7ac180f087a601bd90"
@@ -244,7 +233,7 @@ babel-loader@^7.1.2:
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
 
-babel-messages@^6.23.0, babel-messages@^6.8.0:
+babel-messages@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
   dependencies:
@@ -273,14 +262,14 @@ babel-register@^6.26.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.15"
 
-babel-runtime@^6.22.0, babel-runtime@^6.26.0, babel-runtime@^6.9.0:
+babel-runtime@^6.22.0, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.11.0"
 
-babel-template@^6.24.1, babel-template@^6.26.0, babel-template@^6.8.0:
+babel-template@^6.24.1, babel-template@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-template/-/babel-template-6.26.0.tgz#de03e2d16396b069f46dd9fff8521fb1a0e35e02"
   dependencies:
@@ -304,7 +293,7 @@ babel-traverse@^6.26.0:
     invariant "^2.2.2"
     lodash "^4.17.4"
 
-babel-types@^6.10.2, babel-types@^6.26.0, babel-types@^6.8.1:
+babel-types@^6.26.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-types/-/babel-types-6.26.0.tgz#a3b073f94ab49eb6fa55cd65227a334380632497"
   dependencies:
@@ -853,14 +842,6 @@ des.js@^1.0.0:
 destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
-
-detect-indent@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/detect-indent/-/detect-indent-3.0.1.tgz#9dc5e5ddbceef8325764b9451b02bc6d54084f75"
-  dependencies:
-    get-stdin "^4.0.1"
-    minimist "^1.1.0"
-    repeating "^1.1.0"
 
 detect-indent@^4.0.0:
   version "4.0.0"
@@ -1465,10 +1446,6 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.0"
 
-he@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/he/-/he-1.1.1.tgz#93410fd21b009735151f8868c2f271f3427e23fd"
-
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -1874,10 +1851,6 @@ json-schema-traverse@^0.3.0:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/json-schema-traverse/-/json-schema-traverse-0.3.1.tgz#349a6d44c53a51de89b40805c5d5e59b417d3340"
 
-json-stringify-safe@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/json-stringify-safe/-/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
-
 json3@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/json3/-/json3-3.3.2.tgz#3c0434743df93e2f5c42aee7b19bcb483575f4e1"
@@ -1962,7 +1935,7 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.12.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.2.0:
+lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.4:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -2024,95 +1997,6 @@ md5.js@^1.3.4:
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
-
-melody-code-frame@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-code-frame/-/melody-code-frame-1.0.4.tgz#d6c4a2c0790a88870f9015c372e27dbeeab483f4"
-  dependencies:
-    lodash "^4.15.0"
-
-melody-compiler@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-compiler/-/melody-compiler-1.0.4.tgz#cc9fb8363e80a399559eaeaeefd9414203b85a8b"
-  dependencies:
-    babel-generator "6.10.x"
-    babel-template "^6.8.0"
-    babel-types "^6.8.1"
-    lodash "^4.12.0"
-    melody-code-frame "1.0.4"
-    random-seed "^0.3.0"
-
-melody-component@1.0.4, melody-component@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-component/-/melody-component-1.0.4.tgz#33f23ddc6bace88b4368f28c0d7cca4215bb9b18"
-
-melody-extension-core@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-extension-core/-/melody-extension-core-1.0.4.tgz#12758dd1608a406047b3f0b8322da9b4bbf2bde1"
-  dependencies:
-    babel-template "^6.8.0"
-    babel-types "^6.8.1"
-    lodash "^4.12.0"
-    shortid "^2.2.6"
-
-melody-hoc@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-hoc/-/melody-hoc-1.0.4.tgz#c56abc729a9153474f6e15dfc614a8c5858a2d9f"
-  dependencies:
-    lodash "^4.15.0"
-    melody-component "1.0.4"
-
-melody-idom@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-idom/-/melody-idom-1.0.4.tgz#c2b2d24a18aebf3719460c69da23d373538def0e"
-  dependencies:
-    lodash "^4.12.0"
-
-melody-loader@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-loader/-/melody-loader-1.0.4.tgz#1014ffe9bc64f1a2c3ee381c6cfd8034e94d0205"
-  dependencies:
-    loader-utils "^1.1.0"
-    lodash "^4.12.0"
-    melody-compiler "1.0.4"
-    melody-extension-core "1.0.4"
-    melody-runtime "1.0.4"
-
-melody-parser@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-parser/-/melody-parser-1.0.4.tgz#7c02a0463f7c9761c691070de456bcd5e16bda60"
-  dependencies:
-    he "^1.1.0"
-    lodash "^4.12.0"
-    melody-code-frame "1.0.4"
-
-melody-plugin-idom@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-plugin-idom/-/melody-plugin-idom-1.0.4.tgz#12a4c01158aee9e1049c788af42d929248d3cac5"
-  dependencies:
-    babel-types "^6.8.1"
-
-melody-runtime@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-runtime/-/melody-runtime-1.0.4.tgz#b1b9bfa97d3ba02789779a941208e7513826a807"
-  dependencies:
-    lodash "^4.12.0"
-
-melody-traverse@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-traverse/-/melody-traverse-1.0.4.tgz#10ac581727a8a448f3d80c9203567cca3660228c"
-
-melody-types@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-types/-/melody-types-1.0.4.tgz#de27926050c8e6e2ce7577f33338c3586539c010"
-  dependencies:
-    babel-types "^6.8.1"
-
-melody-util@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/melody-util/-/melody-util-1.0.4.tgz#58c78cd9bdc302578e70b7477bdb55794a13e377"
-  dependencies:
-    melody-component "1.0.4"
 
 mem@^1.1.0:
   version "1.1.0"
@@ -2233,7 +2117,7 @@ minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
 
-minimist@^1.1.0, minimist@^1.1.3, minimist@^1.2.0:
+minimist@^1.1.3, minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
@@ -2262,10 +2146,6 @@ mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
-
-ml-combinations@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/ml-combinations/-/ml-combinations-1.0.1.tgz#12de0e538d7ed5ff4fcf209924878ea66a8ba451"
 
 ms@2.0.0:
   version "2.0.0"
@@ -2750,12 +2630,6 @@ querystringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.0.0.tgz#fa3ed6e68eb15159457c89b37bc6472833195755"
 
-random-seed@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/random-seed/-/random-seed-0.3.0.tgz#d945f2e1f38f49e8d58913431b8bf6bb937556cd"
-  dependencies:
-    json-stringify-safe "^5.0.1"
-
 randomatic@^1.1.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/randomatic/-/randomatic-1.1.7.tgz#c7abe9cc8b87c0baa876b19fde83fd464797e38c"
@@ -2856,10 +2730,6 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-reduce-reducers@^0.1.2:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/reduce-reducers/-/reduce-reducers-0.1.5.tgz#ff77ca8068ff41007319b8b4b91533c7e0e54576"
-
 regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
@@ -2888,12 +2758,6 @@ repeat-element@^1.1.2:
 repeat-string@^1.5.2, repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
-
-repeating@^1.1.0:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/repeating/-/repeating-1.1.3.tgz#3d4114218877537494f97f77f9785fab810fa4ac"
-  dependencies:
-    is-finite "^1.0.0"
 
 repeating@^2.0.0:
   version "2.0.1"
@@ -3080,10 +2944,6 @@ shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
 
-shortid@^2.2.6:
-  version "2.2.8"
-  resolved "https://registry.yarnpkg.com/shortid/-/shortid-2.2.8.tgz#033b117d6a2e975804f6f0969dbe7d3d0b355131"
-
 signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -3161,7 +3021,7 @@ source-map-url@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
 
-source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.1:
+source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.1:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
 

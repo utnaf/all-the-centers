@@ -22,17 +22,6 @@
   },
   "dependencies": {
     "circumcenter-calculator": "^1.1.0",
-    "express": "^4.16.2",
-    "melody-component": "^1.0.4",
-    "melody-hoc": "^1.0.4",
-    "melody-idom": "^1.0.4",
-    "melody-loader": "^1.0.4",
-    "melody-parser": "^1.0.4",
-    "melody-plugin-idom": "^1.0.4",
-    "melody-traverse": "^1.0.4",
-    "melody-types": "^1.0.4",
-    "melody-util": "^1.0.4",
-    "ml-combinations": "^1.0.1",
-    "reduce-reducers": "^0.1.2"
+    "express": "^4.16.2"
   }
 }
