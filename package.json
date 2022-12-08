@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "circumcenter-calculator": "^1.1.0",
-    "express": "^4.16.2",
+    "express": "^4.17.3",
     "melody-component": "^1.0.4",
     "melody-hoc": "^1.0.4",
     "melody-idom": "^1.0.4",
